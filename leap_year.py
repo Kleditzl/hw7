@@ -1,5 +1,7 @@
-def ly():
-    print()
-    
+def ly(a):
+    if a % 4 == 0:
+        return True
+
 if __name__ == '__main__':
-    ly()
+    a = 4
+    ly(a)
