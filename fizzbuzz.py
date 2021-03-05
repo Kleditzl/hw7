@@ -1,12 +1,15 @@
 def fizz_print():
     a = []
     for i in range(1, 101):
-        if i % 3 == 0:
-            a.append("fizz")
-        if i % 5 == 0:
-            a.append("buzz")
+        if i % 3 == 0 and i % 5 == 0:
+            a.append("fizzbuzz")
         else:
-            a.append(i)
+            if i % 3 == 0:
+                a.append("fizz")
+            if i % 5 == 0:
+                a.append("buzz")
+            else:
+                a.append(i)
     lstToStr = ' '.join([str(elem) for elem in a])
     return lstToStr
 
