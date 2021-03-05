@@ -7,5 +7,4 @@ class TestLeapYear(unittest.TestCase):
         self.assertEqual(leap_year.ly(100), False)
         
 if __name__ == '__main__':
-    
     unittest.main()
